@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Display Internet Images</string>
+    <array name="images">
+        <item>https://picsum.photos/id/1001/200/300</item>
+        <item>https://picsum.photos/id/1002/200/300</item>
+        <item>https://picsum.photos/id/1003/200/300</item>
+        <item>https://picsum.photos/id/1004/200/300</item>
+        <item>https://picsum.photos/id/1005/200/300</item>
+        <item>https://picsum.photos/id/1006/200/300</item>
+        <item>https://picsum.photos/id/1008/200/300</item>
+    </array>
+</resources>
