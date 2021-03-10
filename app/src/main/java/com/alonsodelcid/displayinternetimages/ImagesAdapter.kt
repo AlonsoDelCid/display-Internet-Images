@@ -1,6 +1,7 @@
 package com.alonsodelcid.displayinternetimages
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,7 +34,11 @@ class ImagesAdapter(val context: Context) : RecyclerView.Adapter<ImagesAdapter.I
             .centerCrop()
             .into(holder.itemView.imageView);
 
-
+        holder.itemView.imageView.setOnClickListener {
+            val intent = Intent(context, FullScreenActivity::class.java)
+            intent.putExtra("image", image)
+            context.startActivity(intent)
+        }
     }
 
     class ImageViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
